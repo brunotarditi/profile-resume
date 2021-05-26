@@ -1,0 +1,4 @@
+1;Bruno;Tarditi;15/01/1992
+2;Camila;Guajardo;13/05/1994
+3;Fito;Richard;27/06/2017
+4;Carlos;Pérez;05/01/1988

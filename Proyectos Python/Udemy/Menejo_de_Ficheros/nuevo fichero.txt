@@ -1,0 +1,2 @@
+Probando editor de texto en Python.
+Funciona
