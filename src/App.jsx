@@ -1,11 +1,11 @@
-import React from 'react';
-import Button from '@mui/material/Button';
+import React from 'react'
+import { Navbar } from './components/Navbar';
+
+
 function App() {
   return (
     <div className="App">
-     <Button variant="contained">
-       CV Bruno Tarditi
-     </Button>
+      <Navbar />
     </div>
   );
 }
