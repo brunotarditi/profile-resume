@@ -1,2 +1,0 @@
-(this["webpackJsonpprofile-resume"]=this["webpackJsonpprofile-resume"]||[]).push([[0],{16:function(e,n,t){},22:function(e,n,t){"use strict";t.r(n);var r=t(0),c=t.n(r),i=t(10),s=t.n(i),a=(t(16),t(32)),o=t(1);var d=function(){return Object(o.jsx)("div",{className:"App",children:Object(o.jsx)(a.a,{variant:"contained",children:"CV Bruno Tarditi"})})};s.a.render(Object(o.jsx)(c.a.StrictMode,{children:Object(o.jsx)(d,{})}),document.getElementById("root"))}},[[22,1,2]]]);
-//# sourceMappingURL=main.b50cff71.chunk.js.map
