@@ -1,12 +1,12 @@
 import React from 'react'
-import { Navbar } from './components/Navbar';
-
-
+import {  ThemeProvider } from '@mui/material/styles';
+import theme from './ThemeConfig';
+import Main from './components/Main';
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Main />
+    </ThemeProvider>
   );
 }
 
