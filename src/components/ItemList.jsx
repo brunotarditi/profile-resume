@@ -1,28 +1,39 @@
 import React from 'react'
-import {  List, ListItem, ListItemIcon, ListItemButton, ListItemText, Toolbar, Divider } from '@mui/material';
+import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import BuildIcon from '@mui/icons-material/Build';
+import { Link as RouterLink } from 'react-router-dom';
+
 const ItemList = () => {
     return (
         <div>
-            <Toolbar />
-            <Divider />
-            <List component='nav'>
-                <ListItem>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <PersonIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Datos personales" />
-                    </ListItemButton>
+            <List>
+                <ListItem button component={RouterLink} to="/profile-resume">
+                    <ListItemIcon>
+                        <PersonIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Datos personales" />
                 </ListItem>
-                <ListItem>
-                    <ListItemButton>
-                        <ListItemIcon>
-                            <WorkIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Experiencia" />
-                    </ListItemButton>
+
+                <ListItem button component={RouterLink} to="/profile-resume/experience">
+                    <ListItemIcon>
+                        <WorkIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Experiencia" />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon>
+                        <SchoolIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Educación" />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon>
+                        <BuildIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Habilidades" />
                 </ListItem>
             </List>
         </div >

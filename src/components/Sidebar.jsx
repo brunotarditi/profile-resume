@@ -1,44 +1,49 @@
 import React from 'react'
-import { Drawer, Box } from '@mui/material';
+import { Drawer, IconButton, Divider } from '@mui/material';
 import ItemList from './ItemList';
+import { styled, useTheme } from '@mui/styles';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 const drawerWidth = 240;
 
+const DrawerHeader = styled('div')(({ theme }) => ({
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 1),
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-end',
+}));
+
 const Sidebar = (props) => {
-    const { window } = props;
-    const container = window !== undefined ? () => window().document.body : undefined;
+
+    const theme = useTheme();
     return (
-        <Box
-            component="nav"
-            sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-            aria-label="mailbox folders"
-        >
+        <div>
             <Drawer
-                container={container}
-                variant="temporary"
-                open={props.ope}
-                onClose={props.onClose ? props.onClose : null}
-                ModalProps={{
-                    keepMounted: true,
-                }}
                 sx={{
-                    display: { xs: 'block', sm: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    width: drawerWidth,
+                    flexShrink: 0,
+                    '& .MuiDrawer-paper': {
+                        width: drawerWidth,
+                        boxSizing: 'border-box',
+                    },
                 }}
-            >
-                <ItemList />
-            </Drawer>
-            <Drawer
-                variant={props.variant}
-                sx={{
-                    display: { xs: 'none', sm: 'block' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                }}
+                variant="persistent"
+                anchor="left"
                 open={props.open}
             >
+                <DrawerHeader>
+                    <IconButton  onClick={() => props.handleDrawerClose()}>
+                        {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                    </IconButton>
+                </DrawerHeader>
+                <Divider />
                 <ItemList />
             </Drawer>
-        </Box>
-    )
+
+        </div>
+    );
 }
 
 export default Sidebar

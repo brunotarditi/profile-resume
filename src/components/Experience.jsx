@@ -2,9 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
-import PersonalData from './PersonalData';
-
-const Main = () => {
+const Experience = () => {
     const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -22,9 +20,11 @@ const Main = () => {
                 open={open}
                 handleDrawerClose={handleDrawerClose}
             />
-            <PersonalData open={open}/>
-        </Box >
+            <h1>
+                Mi experiencia
+            </h1>
+        </Box>
     )
 }
 
-export default Main
+export default Experience
