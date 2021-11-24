@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid, Box } from '@mui/material';
+import { Typography, Grid, Box, Rating } from '@mui/material';
 import { styled } from '@mui/styles';
 const drawerWidth = 240;
 
@@ -41,6 +41,7 @@ const PersonalData = (props) => {
                             <Typography paragraph>
                                 Datos personales
                             </Typography>
+                            <Rating name="read-only" value={2} readOnly />
                             <Typography paragraph>
                                 Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
                                 eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim

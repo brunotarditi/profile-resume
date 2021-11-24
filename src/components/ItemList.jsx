@@ -1,4 +1,3 @@
-import React from 'react'
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import WorkIcon from '@mui/icons-material/Work';
@@ -17,7 +16,7 @@ const ItemList = () => {
                     <ListItemText primary="Datos personales" />
                 </ListItem>
 
-                <ListItem button component={RouterLink} to="/profile-resume/experience">
+                <ListItem button component={RouterLink} to="/experience">
                     <ListItemIcon>
                         <WorkIcon />
                     </ListItemIcon>

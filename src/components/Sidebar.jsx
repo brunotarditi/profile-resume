@@ -1,4 +1,3 @@
-import React from 'react'
 import { Drawer, IconButton, Divider } from '@mui/material';
 import ItemList from './ItemList';
 import { styled, useTheme } from '@mui/styles';
