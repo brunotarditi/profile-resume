@@ -5,10 +5,10 @@ import { Typography, Card, CardMedia, CardContent, CardActions, Button } from '@
 const ProfileCard = (props) => {
     return (
         <div>
-            <Card sx={{ maxWidth: 800, width:400 }}>
+            <Card sx={{ maxWidth: 800, width:300 }}>
                 <CardMedia
                     component="img"
-                    height="350"
+                    height="300"
                     image={props.photo}
                     alt="profile"
                 />
