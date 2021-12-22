@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import PersonalData from '../components/PersonalData';
-import Experience from '../components/Experience';
+import PersonalData from '../views/PersonalData';
+import Experience from '../views/Experience';
 const AppRouting = (props) => {
     return (
         <div>
             <Routes>
                 <Route exact path="/profile-resume" element={<PersonalData open={props.open}/>} />
-                <Route path="/experience" element={<Experience/>} />
+                <Route path="/experience" element={<Experience open={props.open}/>} />
             </Routes>
         </div>
     )

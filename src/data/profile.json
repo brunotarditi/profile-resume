@@ -1,0 +1,18 @@
+[
+    {   "id": 1,
+        "personal": {
+            "first_name": "Bruno",
+            "last_name": "Tarditi",
+            "date": "15/01/1992",
+            "nationality_one": "Argentino",
+            "nationality_two": "Italiano",
+            "location": "Mendoza, Argentina.",
+            "phone": "2615934064"
+        },
+        "social_media": {
+            "email": "brunotarditi@hotmail.com",
+            "github": "https://github.com/brunotarditi",
+            "linkedin": "https://www.linkedin.com/in/brunotarditi/"
+        }
+    }
+]
