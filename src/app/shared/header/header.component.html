@@ -1,0 +1,19 @@
+<nav>
+  <div #asOpen class="navbar">
+    <i class="uil uil-bars navOpenBtn" (click)="openNav()"></i>
+    <div class="logo"><a href="">Bruno Tarditi</a></div>
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn" (click)="closeNav()"></i>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">Educación</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="">Habilidades</a></li>
+      <li><a href="">Hobbies</a></li>
+    </ul>
+    <div class="appearance">
+      <div class="light-dark" (click)="changeIcon()">
+        <i [ngClass]="[icon]"></i>
+      </div>
+    </div>
+  </div>
+</nav>
